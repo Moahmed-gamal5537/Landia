@@ -1,0 +1,167 @@
+.who-we-are{
+    background-color: #FCFCFC;
+}
+
+.who-we-are h2 {
+    font-size: clamp(1.2em, 7vw, 2.25em);
+}
+.who-we-are-experience-top {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+    @media (width <= 1024px) {
+        grid-template-columns: repeat(6,1fr);
+    }
+    @media (width <= 1024px) {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.who-we-are-experience-top > div {
+    height: 450px;
+    border-radius: var(--raduis-md);
+    overflow: hidden;
+}
+.experience-top-image-lg {
+    grid-column: span 5 ;
+    @media (width <= 1024px) {
+         grid-column: span 3 ;
+    }
+    @media (width <= 768px) {
+         grid-column: auto ;
+    }
+}
+.experience-top-image-md {
+    grid-column: span 4;
+    @media (width <= 1024px) {
+         grid-column: span 3 ;
+    }
+    @media (width <= 768px) {
+         grid-column: auto ;
+    }
+}
+.experience-top-content {
+    grid-column: span 3;
+    background: var(--color-contrast);
+    box-shadow: var(--shadow-md);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-md);
+    @media (width <= 768px) {
+         grid-column: auto ;
+    }
+}
+.who-we-are-experience-center {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+    @media (width <= 768px) {
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    @media (width <= 425px) {
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+.experience-result {
+    border: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+    padding: 20px;
+    border-radius: var(--raduis-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+}
+.experience-result span:first-child {
+    font-weight: 600;
+    font-size: 2em;
+}
+.experience-result span:last-child {
+    color: color-mix(in srgb, var(--color-default), transparent 35%);
+}
+.who-we-are-experience-bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+    @media (width <= 768px) {
+         grid-template-columns: repeat(1,1fr);
+    }
+}
+.who-we-are-experience-bottom .experience-cards-bottom{
+    border: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+    border-radius: var(--raduis-md);
+    padding: var(--space-md);
+}
+.expreince-card-capability-bottom{
+    display: flex;
+    gap: var(--space-lg);
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.experience-cards-bottom:hover{
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--color-default), transparent 90%);
+    border-color: color-mix(in srgb, var(--color-default), transparent 80%);
+}
+.expreince-card-capability-bottom .expreince-card-capability-bottom-icon {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: var(--raduis-md);
+    background: color-mix(in srgb, var(--color-default), transparent 90%);
+    flex-shrink: 0;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expreince-card-capability-bottom-content{
+    background-color: #ffffff;
+}
+.expreince-card-capability-bottom-content h4{
+    font-size: var(--space-md);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+.expreince-card-capability-bottom-content p{
+    max-width: 100%;
+    margin: 0;
+    font-size: 14px;
+    color: color-mix(in srgb, var(--color-default), transparent 25%);
+    line-height: 1.6;
+}
+.why-we-are-conclusion-images{
+    margin-top: var(--space-xl);
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(4,1fr);
+    @media (width <= 768px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.conlusion-image{
+    background-color: var(--color-contrast);
+    border: 1px solid color-mix(in srgb, var(--color-default), transparent 90%);
+    border-radius: var(--raduis-md);
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.conlusion-image:hover{
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--color-default), transparent 90%);
+    border-color: color-mix(in srgb, var(--color-default), transparent 80%);
+}
+.conlusion-image:hover img{
+    filter: grayscale(0);
+    opacity: 1;
+}
+ .conlusion-image img{
+    max-height: 40px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.4;
+ }

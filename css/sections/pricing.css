@@ -1,0 +1,167 @@
+.pricing-toggle-content{
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+    background: var(--color-contrast);
+    border: 1px solid color-mix(in srgb, var(--color-default), transparent 90%);
+    padding: 8px 16px;
+    border-radius: var( --raduis-sm);
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: var(--space-xl);
+}
+.pricing-toggle-content .monthly{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-header);
+    transition: color 0.2s ease;
+}
+.pricing-toggle-content .yearly{
+    font-size: 14px;
+    font-weight: 500;
+    color: color-mix(in srgb, var(--color-default), transparent 30%);
+    transition: color 0.2s ease;
+}
+.pricing-toggle-icon i{
+    font-size: 1.5em;
+}
+.save-badge{
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    background: color-mix(in srgb, var(--color-accent), transparent 90%);
+    border: 1px solid color-mix(in srgb, var(--color-accent), transparent 75%);
+    border-radius: var(--raduis-full);
+    padding: 3px 10px;
+    margin-left: 4px;
+    color: var(--color-accent);
+}
+.pricing-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    @media (width <= 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (width <= 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--space-md);
+    }
+}
+.pricing-card{
+    background: var(--color-contrast);
+    padding: 24px;
+    border-radius: var(--raduis-md);
+    border: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+    box-shadow: 0 1px 4px color-mix(in srgb, var(--color-default), transparent 90%);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+.pricing-card-lable{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--color-default), transparent 45%);
+    letter-spacing: 0.05em;
+}
+.pricing-card-header-price{
+    margin-bottom: 8px ;
+}
+.amount-price-monthly{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-header);
+    font-family: var(--font-header);
+    letter-spacing: -0.02em;
+}
+.pricing-card-header-price sup{
+    font-size: 20px;
+    margin-right: 2px;
+    right: -0.6em;
+    position: relative;
+}
+.price-monthly{
+    font-size: 14px;
+    margin-left: 4px;
+    color: color-mix(in srgb, var(--color-default), transparent 45%);
+}
+.pricing-card-header p{
+    font-size: 14px;
+    line-height: 1.6;
+
+}
+.pricing-card-body{
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+}
+.pricing-card-body p{
+    color: var(--color-header);
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.chacklist{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+.chacklist li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-default);
+}
+.chacklist .disabled{
+    color: color-mix(in srgb, var(--color-default), transparent 45%);
+}
+.pricing-card-footer{
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+}
+.btn-pricing{
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-header);
+    transition: all 0.2s ease;
+    border: 1px solid color-mix(in srgb, var(--color-default), transparent 70%);
+    width: 100%;
+    border-radius: var(--raduis-md);
+}
+.btn-pricing:hover{
+    background: var(--color-contrast);
+     border-color: color-mix(in srgb, var(--color-default), transparent 50%);
+}
+.recommended{
+    border-color: var(--font-header);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--color-default), transparent 90%);
+    position: relative;
+}
+.recommended-tag{
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background: var(--color-header);
+    color: var(--color-contrast);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    letter-spacing: 0.02em;
+    border-radius: var(--raduis-sm);
+}
+.btn-pricing-dark{
+    background: var(--color-header);
+    color: var(--color-contrast);
+}
+.btn-pricing-dark:hover{
+    background: color-mix(in srgb, var(--color-header), transparent 10%);
+    color: var(--color-contrast);
+}

@@ -1,0 +1,130 @@
+.margin-top{
+    margin-top: 3em;
+}
+.section-label-services{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 12px;    
+    background: color-mix(in srgb, var(--color-accent), transparent 85%);
+    width: fit-content;
+    margin-inline: auto;
+    text-transform: uppercase;
+}
+.head-servcies{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+.description-services{
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 16px;
+}
+.button-transform-sm:hover{
+   background: color-mix(in srgb, var(--color-header), transparent 10%);
+   color: var(--color-contrast);
+}
+.button-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--color-default);
+    padding: 0 16px ;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    gap: 6px;
+    transition: all 0.4s ease;
+}
+.button-services:hover{
+    background: var(--color-contrast);
+    color: var(--color-default);
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+    @media (width <= 1024px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media (width <= 768px) {
+        grid-template-columns: repeat(1,1fr);
+        gap: var(--space-md);
+    }
+}
+.service-card{
+    background: var(--color-contrast);
+    padding: 24px;
+    border-radius: var(--raduis-sm);
+    border: 1px solid color-mix(in srgb, var(--color-default), transparent 70%);
+    box-shadow: 0 1px 4px color-mix(in srgb, var(--color-default), transparent 90%);
+    transition: all 0.2s ease;
+}
+.service-card:hover .service-card-icon i{
+    background: color-mix(in srgb, var(--color-default), transparent 70%);
+}
+.service-card:hover {
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--color-default), transparent 80%);
+    border-color: color-mix(in srgb, var(--color-default), transparent 40%);
+}
+.service-card-icon{
+    margin-bottom: var(--space-md);
+}
+.service-card-icon i{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: var(--raduis-sm);
+    background: color-mix(in srgb, var(--color-default), transparent 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: color-mix(in srgb, var(--color-default), transparent 30%);
+    font-size: 18px;
+}
+.services-card-heading{
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+.services-card-heading a{
+    color: var(--color-header);
+    transition: color 0.2s ease;
+}
+.services-card-heading a:hover{
+    color: var(--color-accent);
+}
+.service-card p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+.service-card-links-content {
+    margin-top: 16px;
+    padding-top: 20px;
+    border-top: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+}
+.service-card-link{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-default);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+.service-card-link:hover{
+    color: var(--color-accent);
+}
+.service-card-link:hover i{
+    transform: translateX(3px);
+}
